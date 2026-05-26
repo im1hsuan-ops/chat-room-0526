@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/ai_course_2/',
+  base: '/chat-room-0526/',
 });
