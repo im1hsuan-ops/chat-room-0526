@@ -17,8 +17,6 @@ jobs:
           cache: npm
           cache-dependency-path: webui/package-lock.json
       - run: cd webui && npm ci && npm run build
-        env:
-          VITE_WS_ENDPOINT: ${{ secrets.VITE_WS_ENDPOINT }}
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
